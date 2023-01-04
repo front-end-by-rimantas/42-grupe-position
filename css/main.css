@@ -12,6 +12,7 @@ body {
     position: relative;
 }
 
+header,
 section {
     display: inline-block;
     width: 100%;
@@ -73,8 +74,80 @@ p {
 .bottom-left {
     bottom: 10px;
     left: 10px;
+    z-index: 2;
 }
 .bottom-right {
     bottom: 10px;
     right: 10px;
+}
+
+.agurkas {
+    display: inline-block;
+    width: 100%;
+    padding: 60px;
+    background-color: green;
+    color: #fff;
+    position: relative;
+}
+.check {
+    width: 40px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.a {
+    background-color: pink;
+    height: 400px;
+    position: relative;
+}
+.b {
+    display: inline-block;
+    width: 50%;
+    height: 200px;
+    background-color: aqua;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.c {
+    display: inline-block;
+    width: 50%;
+    height: 100px;
+    background-color: gold;
+    color: #000;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.open {
+    width: 40px;
+    height: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: cornflowerblue;
 }
